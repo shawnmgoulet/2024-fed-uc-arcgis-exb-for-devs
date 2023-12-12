@@ -53,7 +53,7 @@
         </p>
         <p style="text-align: left; font-size: 30px">
           Slides:
-          <a href="http://esriurl.com/exb-for-dev-24"><code>esriurl.com/exb-for-dev-24</code></a>
+          <a href="https://esriurl.com/exb-for-dev-24"><code>esriurl.com/exb-for-dev-24</code></a>
         </p>
       </section>
 
@@ -152,7 +152,7 @@
       </section>
 
       <section  data-background="img/2024/fed/2.png">
-        <h2 style="text-align: left">Custom widgets</h2>
+        <h2 style="text-align: right">Custom widgets</h2>
       </section>
 
       <section data-markdown data-background="img/2024/fed/2.png">
@@ -217,14 +217,14 @@
         <script type="text/template">
           ## Two styles
 
-          ### Style 1: Class components
+          ### Style 1: Class components (pre React 16.8)
 
           - Make use of ES6 class and extend the component class in React.
           - Can maintain its own data with state.
           - Props accessed via this.props.
           - Uses the render() method.
           ---
-          ### Style 2: Function components
+          ### Style 2: Functional components (introduced at React 16.8)
           - Basic JavaScript function
           - Uses React Hooks to use state and other features.
           - Can accept and use props.
@@ -255,7 +255,7 @@
 
       <section data-markdown data-background="img/2024/fed/2.png">
         <script type="text/template">
-          ## Create a widget using function
+          ## Create a widget using a functional component
 
           ```jsx
           import { AllWidgetProps, jsx } from "jimu-core"
@@ -390,8 +390,8 @@
           2. Users within ArcGIS Enterprise can build Experiences with those custom widgets
           3. ArcGIS Enterprise 11.0 or higher
 
-          - Detailed instructions (blog post): [esriurl.com/exb-widget-enterprise](https://esriurl.com/exb-widget-enterprise)
-          - Documentation: [esriurl.com/share-widget.htm](https://esriurl.com/share-widget.htm)
+          - Documentation: [links.esri.com/exb-share-custom-widget](https://links.esri.com/exb-share-custom-widget)
+          - Detailed instructions (blog post): [links.esri.com/exb-add-custom-widgets-blog](https://links.esri.com/exb-add-custom-widgets-blog)
         </script>
       </section>
 
@@ -400,13 +400,12 @@
           ## Developer Edition
 
           1. Build the Experience with your custom widgets
-          2. Download as ZIP
-
-          ![](img/exb-download.png)
-
+          2. Download as ZIP (image below)
           3. Unzip files
           4. If there is any private content, add `clientId` to `cdn/<app-string>/config.json`
           5. Host the files on a web server
+
+          ![](img/exb-download.png)
         </script>
       </section>
 
@@ -423,8 +422,9 @@
 
           - Faster builds
           - Consistent builds
-          - Easier for testers
+          - Test integration
           - The "reference" application
+          - Branch deployments
         </script>
       </section>
 
@@ -490,7 +490,7 @@
           - Easier version management (via Git branching)
           - Quicker bug investigations (is it happening on the reference app?)
           - More organized management of app config versions
-          - Quickly/easily share app both internally & externally
+          - Quickly/easily share app both within & outside of team/organization
         </script>
       </section>
 
