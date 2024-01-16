@@ -1,0 +1,18 @@
+{
+    "name": "get-map-coordinates",
+    "label": "Get Map Coordinates",
+    "type": "widget",
+    "version": "1.13.0",
+    "exbVersion": "1.13.0",
+    "author": "2024 Esri Federal GIS Conference | Esri Professional Services",
+    "dependency": ["jimu-arcgis"],
+    "description": "Get map coordinates demo widget.",
+    "copyright": "",
+    "license": "http://www.apache.org/licenses/LICENSE-2.0",
+    "properties": {},
+    "translatedLocales": ["en"],
+    "defaultSize": {
+      "width": 800,
+      "height": 500
+    }
+  }
